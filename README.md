@@ -19,4 +19,5 @@ Manage new jobs from DB, process them, then stores the result using concurrency 
 `POST -- /job/forceQueue -- Force check for new jobs on DB, and add them to the queue. It will be good for dev only.`
 
 `GET -- /job/process?id -- When a job starts, set it as processing on DB, through this route.`
+
 `POST -- /job/finalize -- When a job finalize, set the results on DB passing to this route. -- payload: { http_code, status, _id }`
