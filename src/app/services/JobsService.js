@@ -39,11 +39,11 @@ class JobsService {
     }
   }
 
-  processing = async ({ _id }) =>
+  processing = async ({ id }) =>
     await mongo.db
       .get('jobs')
       .findOneAndUpdate(
-        { _id: mongodb.ObjectId(_id) },
+        { _id: mongodb.ObjectId(id) },
         { $set: { status: 'PROCESSING' } }
       );
 
