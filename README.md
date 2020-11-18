@@ -1,5 +1,5 @@
 # Jobs Processor (URL Fetch)
-Manage new URLs to process from jobs list on DB, process them, then stores the http_code on DB and updated status, all using concurrency worker. Also checks for new jobs on database.
+Manage new URLs to process from jobs list on DB, process them, then stores the http code and updated status, all using concurrency worker.
 
 # Technologies and libs
 - Bull & Redis DB: To efficiently manage queues, with concurrency on the same process, or even multiple processes.
