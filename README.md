@@ -14,6 +14,7 @@ Manage new jobs from DB, process them, then stores the result using concurrency 
 # Routes
 
 `GET -- /job -- Get job list`
+
 `POST -- /job -- Post a new job -- payload: { url } `
 
 `POST -- /job/forceQueue -- Force check for new jobs on DB, and add them to the queue. It will be good for dev only.`
