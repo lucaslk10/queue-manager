@@ -1,0 +1,26 @@
+{
+  "name": "job-worker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Lucas Gustavo Santana Silva",
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "nodemon src/server.js",
+    "dev:queue": "nodemon src/queueProcessor.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bull": "^3.18.1",
+    "bull-board": "^0.10.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "monk": "^7.3.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
