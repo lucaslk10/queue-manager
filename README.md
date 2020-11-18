@@ -12,7 +12,7 @@ Manage new jobs from DB, process them, then stores the result using concurrency 
 - Dotenv: For env variables.
 
 # Routes
-
+`
 GET -- /job -- Get job list
 POST -- /job -- `{ url }` -- Post a new job 
 
@@ -20,3 +20,4 @@ POST -- /job/forceQueue -- Force check for new jobs on DB, and add them to the q
 
 GET -- /job/process?id -- When a job starts, set it as processing on DB, through this route.
 POST -- /job/finalize `{ http_code, status, _id }` -- When a job finalize, set the results on DB passing to this route.
+`
