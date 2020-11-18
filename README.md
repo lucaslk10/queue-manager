@@ -16,7 +16,7 @@ Manage new URLs to process from jobs list on DB, process them, then stores the h
 
 `yarn dev:server`
 
-`yarn dev:queue` : Runs the queue processor. You can run how much processes you want.
+`yarn dev:queue` Runs the queue processor. Also, you can run how much processes you want.
 
 # Routes
 
