@@ -1,5 +1,5 @@
 # Queue Manager
-Manage new URLs to process from jobs list on DB, process them, then stores the http code and updated status, all using concurrency worker. 
+Manage new URLs to process from jobs list on DB with Bull & Redis, process them, then stores the http code and updated status.
 
 # Technologies
 - Bull & Redis DB
