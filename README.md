@@ -13,9 +13,9 @@ Manage new URLs to process from jobs list on DB, process them, then stores the h
 
 # To dos
 - Use worker threads.
-- Use postgre instead, with sequencial ID to performatic pagination.
+- Use postgre, with sequencial ID to performatic pagination.
 - Performatic Pagination 'WHERE ID >= 59999 AND ID =< 60011'
-- Classic Pagination with 'SKIP/OFFSET/LIMIT' (For comparation purposes only).
+- Classic Pagination with 'SKIP/OFFSET/LIMIT' (For comparison purposes only).
 - Insert 100.000.000 registers at Postgre and compare pagination.
 
 # Running
