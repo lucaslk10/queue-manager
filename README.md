@@ -1,7 +1,7 @@
 # Jobs Processor (URLs Processor)
 Manage new URLs to process from jobs list on DB, process them, then stores the http code and updated status, all using concurrency worker. 
 
-# Technologies and libs
+# Technologies
 - Bull & Redis DB: To efficiently manage queues, with concurrency on the same process, or even multiple processes.
 - Bull-board: For easily check our queue, and rerun failed process. (You can acess running locally `localhost:3333/admin/queues` - Check screenshots below)
 - Express: For manage our HTTP calls.
