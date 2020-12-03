@@ -27,15 +27,13 @@ Manage new URLs to process from jobs list on DB, process them, then stores the h
 
 # Routes
 
-`GET -- /job -- Get job list`
+`GET -- /job`
 
-`POST -- /job -- Post a new job -- payload: { url } `
+`POST -- /job -- body: { url } `
 
-`POST -- /job/forceQueue -- Force check for new jobs on DB, and add them to the queue. It will be good for dev only.`
+`GET -- /job/process?id`
 
-`GET -- /job/process?id -- When a job starts, update status as 'processing' on DB, through this route.`
-
-`POST -- /job/finalize -- When a job finalize, stores the results on DB passing to this route. -- payload: { http_code, status, _id }`
+`POST -- /job/finalize`
 
 # Screenshots
 
